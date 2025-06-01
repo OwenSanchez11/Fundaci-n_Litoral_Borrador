@@ -471,6 +471,10 @@ p {
   flex-shrink: 0;
 }
 
+.reels-container p {
+    font-size: 30px;
+    text-align: center;
+}
 
     @media(max-width:991px) {
         .menu {
