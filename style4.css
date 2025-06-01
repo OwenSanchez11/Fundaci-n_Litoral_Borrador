@@ -473,7 +473,7 @@ p {
 
 .reels-container p {
     font-size: 30px;
-    text-align: center;
+    text-align: justify;
 }
 
     @media(max-width:991px) {
