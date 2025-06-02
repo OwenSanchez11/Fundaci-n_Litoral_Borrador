@@ -476,6 +476,7 @@ p {
     text-align: justify;
 }
 
+
     @media(max-width:991px) {
         .menu {
             padding: 30px;
@@ -606,6 +607,14 @@ p {
             gap: 16px;
             overflow-x: auto;
             padding: 10px;
+        }
+
+        
+
+        .reels-container p {
+            font-size: 15px;
+            text-align: center;
+            margin-bottom: 20px;
         }
 
         .reels-container video {
