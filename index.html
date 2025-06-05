@@ -33,18 +33,26 @@
             </p>
         </div>
     </header>
+
+    <h1 class="titulo-general-galeria">
+        ULTIMOS REELS
+    </h1>
         
-        <section class="reels-section">
-                <h2 class="titulo-general-galeria">Últimos Reels</h2>
-            <div class="reels-container">
-                <video src="video/WhatsApp Video 2025-05-31 at 14.50.40.mp4" controls muted loop autoplay playsinline></video>
-                <p>¿Trabajas manipulando alimentos? <br> 
-                    pues este curso es para ti, en la fundación litoral Atlántico tenemos un curso de manipulación de alimentos, en el cual podrás conocer todo acerca de la higiene, normativas y seguridad de los alimentos
-                    y al final del curso te daremos una certifiación que compruebe todo lo dicho anteriormente.</p>
+   <div class="contenedor-videos">
+        <div class="video-grid">
+            <div class="video">
+                <video src="video/1.mp4" poster="img/miniatura.png" muted></video>
             </div>
-        </section>
-
-
+            <div class="video">
+                <video src="video/2.mp4" muted></video>
+            </div>
+ 
+        </div>
+        <div class="popup-video">
+            <span>&times;</span>
+            <video src="video/1.mp4" muted autoplay controls></video>
+        </div>
+   </div>
 
     
     <section class="alimentos">
@@ -178,7 +186,6 @@
 
     </footer>
 
-
-
+<script src="script.js"></script>
 </body>
 </html>
