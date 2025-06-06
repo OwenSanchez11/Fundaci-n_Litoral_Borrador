@@ -521,7 +521,9 @@ p {
     cursor: pointer;
 }
 
-
+.popup-video {
+    display: none;
+}
     @media(max-width:991px) {
         .menu {
             padding: 30px;
