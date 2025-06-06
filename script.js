@@ -1,21 +1,19 @@
 const popup = document.querySelector('.popup-video');
 const closeBtn = document.querySelector('.popup-video span');
+const popupVideo = popup.querySelector('video');
 
-  // Oculta el popup cuando se hace clic en la X
-  closeBtn.addEventListener('click', () => {
-    popup.style.display = 'none';
-    popup.querySelector('video').pause(); // pausa el video también
+closeBtn.addEventListener('click', () => {
+  popup.style.display = 'none';
+  popupVideo.pause();
+  popupVideo.removeAttribute('src'); // Limpia el src para que no quede cargando
+  popupVideo.load(); // Reinicia el elemento
+});
+
+const videos = document.querySelectorAll('.video-grid .video video');
+videos.forEach(video => {
+  video.addEventListener('click', () => {
+    popupVideo.src = video.src;
+    popup.style.display = 'block';
+    popupVideo.play();
   });
-
-  // Para que se abra al hacer clic en un video (opcional)
-  const videos = document.querySelectorAll('.video-grid .video video');
-  videos.forEach(video => {
-    video.addEventListener('click', () => {
-      const popupVideo = popup.querySelector('video');
-      popupVideo.src = video.src;
-      popup.style.display = 'block';
-      popupVideo.play();
-    });
-  });
-
-
+});
